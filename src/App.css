@@ -1,38 +1,111 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: rgba(255, 0, 0, 0.7) url("./images/bg-intro-desktop.png");
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  width: 100wh;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: aliceblue; */
+  width: 60%;
+  height: 70%;
+  
+}
+
+.heading{
+  background-color: blue;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin-bottom: 15px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.firstHalf{
+  /* background-color: red; */
+  margin-right: 80px;
+  text-align: left;
+  color: black;
+
+}
+.secondHalf{
+
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+.input{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+}
+
+.field{
+  width: 300px;
+  margin-bottom: 2px;
+  padding: 10px;
+  padding-left: 30px;
+
+}
+
+button{
+  padding: 15px 20px;
+  background-color: green;
+  color: white;
+}
+
+span{
+  color: red;
+}
+
+.footnote{
+  font-size: 8px;
+  color: gray;
+}
+.boldText{
+  font-weight: 600;  
+  color: white;
+}
+
+@media screen and (max-width: 580px) {
+  .App{
+    height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+  .container{
+    display: flex;
+    flex-direction: column;
   }
+
+  .firstHalf {
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+
+  }
+  .secondHalf{
+    margin: 0;
+  }
+
+  .input {
+    margin-bottom: 40px;
+  }
+}
+
+.error{
+  color: red;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
 }
