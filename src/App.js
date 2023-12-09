@@ -83,7 +83,7 @@ function App() {
           {error.lastName && <p className='error'>Last Name is empty.</p>}
 
           <input className = 'field' value = {email}placeholder='E-mail' onChange={handleEmailChange}></input>
-          {error.email && <p className='error'>E-mail is empty.</p>}
+          {error.email && <p className='error'>E-mail is empty or incorrect format.</p>}
           <input className = 'field' value = {password} placeholder='Password' onChange={handlePasswordChange}></input>
           {error.password && <p className='error'>Password is empty.</p>}
 
